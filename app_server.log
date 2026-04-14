@@ -1,0 +1,15 @@
+Dataset loaded successfully
+Loading model files...
+Model preload summary: loaded=12, failed=0
+============================================================
+Stock Price Prediction System - Flask Server
+============================================================
+Base Directory: C:\Users\ASUS\Downloads\umn2\New folder
+Models Directory: C:\Users\ASUS\Downloads\umn2\New folder\models
+Available Tickers: BIRD.JK, BPTR.JK, GIAA.JK, LRNA.JK, PURA.JK, TAXI.JK
+Models Loaded: 12/12
+============================================================
+Starting server on http://localhost:5000
+============================================================
+ * Serving Flask app 'app'
+ * Debug mode: on
