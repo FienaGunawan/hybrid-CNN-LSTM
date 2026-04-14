@@ -211,7 +211,7 @@ CSS = """
         justify-content: center;
         gap: 0.75rem;
         background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-navy) 100%);
-        color: white;
+        color: #000000;
         box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
         text-transform: uppercase;
         letter-spacing: 0.5px;
@@ -240,7 +240,7 @@ CSS = """
         justify-content: center;
         gap: 0.75rem;
         background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-navy) 100%);
-        color: white;
+        color: #000000;
         box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
         text-transform: uppercase;
         letter-spacing: 0.5px;
