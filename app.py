@@ -69,10 +69,11 @@ CSS = """
         font-family: 'Inter', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
         color: var(--text-dark);
         line-height: 1.6;
+        background: #ffffff !important;
     }
 
     body {
-        background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        background: #ffffff;
     }
 
     .block-container {
@@ -211,11 +212,12 @@ CSS = """
         justify-content: center;
         gap: 0.75rem;
         background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-navy) 100%);
-        color: #000000;
+        color: white;
         box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
         text-transform: uppercase;
         letter-spacing: 0.5px;
         width: 100%;
+        max-width: 350px;
     }
 
     .stButton > button:hover {
@@ -240,7 +242,7 @@ CSS = """
         justify-content: center;
         gap: 0.75rem;
         background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-navy) 100%);
-        color: #000000;
+        color: white;
         box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
         text-transform: uppercase;
         letter-spacing: 0.5px;
@@ -270,6 +272,7 @@ CSS = """
         border: 2px solid var(--border-light);
         border-radius: 8px;
         background: var(--bg-white);
+        color: var(--text-dark);
     }
 
     div[data-baseweb="select"] > div:hover {
@@ -279,6 +282,34 @@ CSS = """
     div[data-baseweb="select"] > div:focus-within {
         border-color: var(--primary-blue);
         box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+    }
+
+    /* Selectbox Text Styling */
+    div[data-baseweb="select"] input {
+        color: var(--text-dark) !important;
+        font-weight: 500;
+    }
+
+    div[data-baseweb="select"] [role="combobox"] {
+        color: var(--text-dark) !important;
+        font-weight: 500;
+    }
+
+    /* Selectbox Dropdown Menu */
+    [role="listbox"] {
+        background: var(--bg-white) !important;
+        border: 1px solid var(--border-light) !important;
+    }
+
+    [role="option"] {
+        color: var(--text-dark) !important;
+        background: var(--bg-white) !important;
+    }
+
+    [role="option"]:hover,
+    [role="option"][aria-selected="true"] {
+        background: #e3f2fd !important;
+        color: var(--primary-blue) !important;
     }
 
     .stats-grid {
