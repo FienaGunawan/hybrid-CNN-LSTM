@@ -304,22 +304,23 @@ Jika ada pertanyaan atau issue, lakukan:
 
 ## Streamlit Deployment (Recommended)
 
-This repo now includes `streamlit_app.py` for Streamlit Cloud or local Streamlit runs.
+This repo now includes `app.py` for Streamlit Cloud or local Streamlit runs.
 
 ### Run Locally
 
 ```bash
 pip install -r requirements.txt
-streamlit run streamlit_app.py
+streamlit run app.py
 ```
 
 ### Deploy on Streamlit Cloud
 
 1. Push this project to a public GitHub repo.
 2. In Streamlit Cloud, create a new app and select:
-   - Main file: `streamlit_app.py`
+   - Main file: `app.py`
 3. Ensure `requirements.txt` and `runtime.txt` are present in the repo.
 
 Notes:
 - `runtime.txt` pins Python to 3.10 for TensorFlow compatibility.
 - If models are missing, the app will display a mock prediction message.
+- Flask backend now lives in `backend.py` (optional for API usage).
